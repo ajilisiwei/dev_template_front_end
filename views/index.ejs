@@ -138,8 +138,10 @@
       //进行ajax请求
       $.ajax({
         type:"GET",
-        url:"api/water?city_id=1&year=2017",
+//        url:"api/water?city_id=1&year=2017",
+        url:"http://wei.it.demo.api:8090/api/water?city_id=1&year=2017&type=3",
         success:function (data) {
+
           afterAjax(data);
         }
       });
